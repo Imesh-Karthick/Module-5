@@ -31,6 +31,70 @@ To write a Python program that uses **Hierarchical Inheritance** to input and di
 5. Display collected information using class methods.
 
 ## Program
-Add code here
-## Sample Output
+#Add code here
 
+class Details:
+
+    def __init__(self):
+    
+        self.name = input("Enter name: ")
+        
+        self.age = int(input("Enter age: "))
+
+
+class Employee(Details):
+    
+    def __init__(self):
+    
+        super().__init__()
+        
+        self.emp_id = input("Enter employee ID: ")
+        
+        self.salary = float(input("Enter salary: "))
+    
+    def display(self):
+        
+        print("\nEmployee Details:")
+        
+        print("Name:", self.name)
+        
+        print("Age:", self.age)
+        
+        print("Employee ID:", self.emp_id)
+        
+        print("Salary:", self.salary)
+
+class Patient(Details):
+
+    def __init__(self):
+    
+        super().__init__()
+        
+        self.patient_id = input("Enter patient ID: ")
+        
+        self.ailment = input("Enter ailment: ")
+    
+    def display(self):
+        
+        print("\nPatient Details:")
+        
+        print("Name:", self.name)
+        
+        print("Age:", self.age)
+        
+        print("Patient ID:", self.patient_id)
+        
+        print("Ailment:", self.ailment)
+
+emp = Employee()
+
+pat = Patient()
+
+emp.display()
+
+pat.display()
+## Sample Output
+<img width="427" height="616" alt="image" src="https://github.com/user-attachments/assets/467737f2-e6c7-4084-afe1-9af3ab64153b" />
+
+##Result
+Thus the program was successfully executed and obtained the result.
