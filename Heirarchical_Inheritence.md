@@ -96,5 +96,4 @@ pat.display()
 ## Sample Output
 <img width="427" height="616" alt="image" src="https://github.com/user-attachments/assets/467737f2-e6c7-4084-afe1-9af3ab64153b" />
 
-##Result
-Thus the program was successfully executed and obtained the result.
+
